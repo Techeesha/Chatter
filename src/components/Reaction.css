@@ -1,0 +1,38 @@
+.reaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reaction button,
+.reaction a {
+  background: none;
+  border: none;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.dark .reaction .reactions {
+  color: #fff;
+}
+.reaction i {
+  font-size: 1rem !important;
+}
+.reaction span {
+  font-size: 14px;
+}
+.reaction .like {
+  display: flex;
+  align-items: center;
+}
+.post .reaction a {
+  width: 0%;
+}
+
+/* media query */
+@media (max-width: 550px) {
+  .reaction .r-span {
+    display: none;
+  }
+}

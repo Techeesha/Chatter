@@ -1,0 +1,65 @@
+.analytic h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+.analytic .period,
+.analytic .summary {
+  margin: 16px 0;
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 8px;
+}
+.analytic .summary {
+  margin-top: 24px;
+}
+.analytic span.date {
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-right: 5px;
+}
+.analytic span.duration {
+  color: var(--gray);
+}
+.analytic .highlight {
+  font-size: 20px;
+  margin: 16px 0;
+}
+.analytic .posts {
+  margin-top: 24px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.analytic .post {
+  min-width: 100%;
+  background: none;
+  border: none;
+
+  scroll-padding: 50%;
+  scroll-snap-align: start;
+}
+.analytic .avatar {
+  border: 1px solid #f5f5f5;
+}
+.analytic .btn {
+  display: inline-block;
+  width: max-content;
+}
+.analytic ul {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+}
+.analytic li {
+  margin: 8px 0;
+}
+.analytic li span {
+  color: var(--gray);
+}
+
+/* dark mode  */
+.App.dark .analytic {
+  color: #fff;
+}
+.App.dark .analytic .avatar {
+  border-color: var(--dark-100);
+}

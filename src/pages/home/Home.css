@@ -1,0 +1,201 @@
+.home {
+  display: flex;
+}
+.home .main-content {
+  flex: 1;
+}
+.home .create {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.home-list {
+  border: 1px solid #f5f5f5;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 16px;
+  padding-bottom: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+.home-list button {
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  background: none;
+}
+.home-list li:first-of-type button {
+  border-color: var(--blue);
+}
+.home .post:first-of-type {
+  border-radius: 0 0 10px 10px;
+}
+
+/* create new post  */
+.create-post {
+  background: #ffff;
+  border-radius: 10px;
+  padding: 16px 24px;
+  border: 1px solid #f5f5f5;
+  margin-bottom: 24px;
+}
+.new-post {
+  display: flex;
+  align-items: center;
+}
+.new-post button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0px 16px 16px 0px;
+  border: none;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+.new-post i {
+  font-size: 1rem;
+}
+.App.dark .new-post button {
+  color: var(--black);
+}
+.new-post.color-2a85fe button:hover {
+  background: var(--blue);
+  color: #fff;
+}
+.new-post.color-a058b3 button:hover {
+  background: var(--purple);
+  color: #fff;
+}
+.new-post.color-ff4545 button:hover {
+  background: var(--red);
+  color: #fff;
+}
+/* create button. */
+.create-post label {
+  display: inline;
+}
+.create-post i {
+  font-size: 1.2rem;
+  margin: 0 8px;
+  color: var(--gray);
+  cursor: pointer;
+}
+.create-post .action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.create-post .form-btn {
+  display: flex;
+  align-items: center;
+}
+.create-post-header {
+  display: flex;
+  gap: 10px;
+}
+div.edit {
+  display: flex;
+  align-items: center;
+  background: none;
+  margin-right: 16px;
+  cursor: pointer;
+}
+div.edit i {
+  font-size: 0.9rem;
+}
+
+/* rich text editor  */
+.text-editor {
+  width: 100%;
+}
+.wrapper-class {
+  border: 1px solid #f5f5f5;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+}
+.toolbar-class {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.editor-class {
+  background-color: var(--smoke);
+  padding: 0 8px;
+}
+
+.rdw-emoji-modal {
+  border: 1px solid #f5f5f5;
+  left: -70px;
+}
+.preview {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.text-editor .rdw-emoji-modal,
+.text-editor .rdw-dropdown-optionwrapper,
+.rdw-suggestion-dropdown {
+  border-radius: 10px;
+}
+.rdw-suggestion-dropdown {
+  position: relative !important;
+  width: 95%;
+}
+.rdw-suggestion-option {
+  cursor: pointer;
+}
+.rdw-mention-link,
+.rdw-hashtag-link {
+  background: #fff;
+}
+
+/* dark mode  */
+.App.dark .create-post {
+  background: var(--dark-300);
+  border: 1px solid var(--dark-100);
+}
+.App.dark .home-list {
+  border-color: var(--dark-100);
+  color: #fff;
+  background: var(--dark-300);
+}
+.App.dark .create-post input,
+.dark textarea {
+  background: var(--dark-200);
+  outline-color: var(--dark-100);
+}
+.App.dark .create-post button,
+.App.dark .home-list button,
+.App.dark .home .create {
+  color: #fff;
+}
+.App.dark .create-post div.edit {
+  background: none;
+  color: #fff;
+}
+
+/* media query   */
+@media (max-width: 550px) {
+  .create-post-header {
+    display: initial;
+  }
+  .create-post .action {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .create-post .form-btn {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 702px) {
+  .post-msg {
+    display: none;
+  }
+}
